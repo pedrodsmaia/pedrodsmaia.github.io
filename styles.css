@@ -133,7 +133,9 @@ h1 span {
 .area-item p,
 .timeline-content p,
 .hero-note p,
-.contact-grid a {
+.contact-grid a,
+.detail-list,
+.link-list {
   color: var(--muted);
   line-height: 1.7;
   font-size: 1.02rem;
@@ -229,6 +231,27 @@ h1 span {
   margin-bottom: 0.5rem;
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.detail-list,
+.link-list {
+  margin: 0.9rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.detail-list li,
+.link-list li {
+  margin-bottom: 0.5rem;
+}
+
+.link-list a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.link-list a:hover,
+.link-list a:focus-visible {
+  color: var(--accent);
 }
 
 .timeline {
