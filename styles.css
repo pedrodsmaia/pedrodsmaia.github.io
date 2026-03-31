@@ -1,8 +1,8 @@
 :root {
   --paper: #0b1957;
-  --paper-deep: #060d2f;
+  --paper-deep: #15104a;
   --surface: rgba(11, 25, 87, 0.34);
-  --surface-strong: rgba(8, 18, 64, 0.98);
+  --surface-strong: rgba(16, 13, 74, 0.98);
   --text: #f8f3ea;
   --muted: rgba(248, 243, 234, 0.76);
   --line: rgba(255, 219, 209, 0.2);
@@ -28,7 +28,8 @@ body {
   font-family: "Manrope", sans-serif;
   background:
     linear-gradient(140deg, rgba(250, 158, 188, 0.03), transparent 35%),
-    radial-gradient(circle at top right, rgba(255, 219, 209, 0.04), transparent 25%),
+    radial-gradient(circle at top right, rgba(250, 158, 188, 0.03), transparent 24%),
+    radial-gradient(circle at left 20%, rgba(21, 16, 74, 0.28), transparent 32%),
     linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
 }
 
@@ -156,7 +157,7 @@ h1 span {
 .hero-note {
   align-self: end;
   padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(11, 25, 87, 0.72), rgba(8, 18, 64, 0.92));
+  background: linear-gradient(180deg, rgba(11, 25, 87, 0.74), rgba(21, 16, 74, 0.92));
 }
 
 .profile-figure {
@@ -193,7 +194,7 @@ h1 span {
 
 .intro-card {
   padding: 1.75rem;
-  background: linear-gradient(180deg, rgba(11, 25, 87, 0.68), rgba(8, 18, 64, 0.88));
+  background: linear-gradient(180deg, rgba(11, 25, 87, 0.68), rgba(21, 16, 74, 0.88));
 }
 
 .intro-card h2,
