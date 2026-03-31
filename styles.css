@@ -1,15 +1,16 @@
 :root {
   --paper: #03017d;
-  --paper-deep: #0d0a93;
-  --surface: rgba(255, 192, 203, 0.08);
-  --surface-strong: #1612a1;
-  --text: #ffc0cb;
-  --muted: rgba(255, 192, 203, 0.82);
-  --line: rgba(255, 192, 203, 0.24);
+  --paper-deep: #120d8f;
+  --surface: rgba(255, 192, 203, 0.05);
+  --surface-strong: rgba(16, 12, 128, 0.96);
+  --text: #ffd6e4;
+  --muted: rgba(255, 214, 228, 0.76);
+  --line: rgba(255, 192, 203, 0.18);
   --accent: #f065ad;
-  --accent-soft: rgba(240, 101, 173, 0.2);
+  --accent-soft: rgba(240, 101, 173, 0.14);
+  --accent-faint: rgba(255, 192, 203, 0.08);
   --max-width: 1100px;
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  --shadow: 0 20px 48px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -26,8 +27,8 @@ body {
   color: var(--text);
   font-family: "Manrope", sans-serif;
   background:
-    linear-gradient(140deg, rgba(240, 101, 173, 0.1), transparent 35%),
-    radial-gradient(circle at top right, rgba(255, 192, 203, 0.16), transparent 25%),
+    linear-gradient(140deg, rgba(240, 101, 173, 0.06), transparent 35%),
+    radial-gradient(circle at top right, rgba(255, 192, 203, 0.11), transparent 25%),
     linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
 }
 
@@ -56,6 +57,7 @@ a {
   gap: 1rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--line);
+  box-shadow: inset 0 -1px 0 rgba(255, 192, 203, 0.05);
 }
 
 .site-name,
@@ -74,6 +76,7 @@ h3 {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 .site-nav {
@@ -85,11 +88,12 @@ h3 {
 .site-nav a {
   color: var(--muted);
   font-size: 0.95rem;
+  transition: color 160ms ease;
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: var(--accent);
+  color: #ffc0cb;
 }
 
 .hero {
@@ -152,6 +156,7 @@ h1 span {
 .hero-note {
   align-self: end;
   padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(255, 192, 203, 0.07), rgba(255, 192, 203, 0.03));
 }
 
 .profile-figure {
@@ -188,6 +193,7 @@ h1 span {
 
 .intro-card {
   padding: 1.75rem;
+  background: linear-gradient(180deg, rgba(255, 192, 203, 0.06), rgba(255, 192, 203, 0.03));
 }
 
 .intro-card h2,
@@ -247,11 +253,12 @@ h1 span {
 .link-list a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.16em;
+  color: var(--text);
 }
 
 .link-list a:hover,
 .link-list a:focus-visible {
-  color: var(--accent);
+  color: #ffc0cb;
 }
 
 .timeline {
@@ -309,11 +316,13 @@ h1 span {
   padding: 1.1rem 0;
   border-top: 1px solid var(--line);
   text-decoration: none;
+  transition: color 160ms ease, border-color 160ms ease;
 }
 
 .contact-grid a:hover,
 .contact-grid a:focus-visible {
-  color: var(--accent);
+  color: #ffc0cb;
+  border-color: rgba(240, 101, 173, 0.3);
 }
 
 .contact-link {
@@ -326,16 +335,24 @@ h1 span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.35rem;
-  height: 1.35rem;
-  flex: 0 0 1.35rem;
-  color: var(--accent);
+  width: 0.92rem;
+  height: 0.92rem;
+  flex: 0 0 0.92rem;
+  color: rgba(255, 214, 228, 0.48);
+  transition: color 160ms ease, opacity 160ms ease;
+  opacity: 0.72;
 }
 
 .contact-icon svg {
   width: 100%;
   height: 100%;
   fill: currentColor;
+}
+
+.contact-link:hover .contact-icon,
+.contact-link:focus-visible .contact-icon {
+  color: rgba(255, 192, 203, 0.72);
+  opacity: 0.9;
 }
 
 .reveal {
