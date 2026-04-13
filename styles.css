@@ -147,7 +147,6 @@ h1 span {
   font-size: 1.02rem;
 }
 
-.hero-note,
 .intro-card,
 .timeline-item {
   background: var(--surface);
@@ -157,12 +156,11 @@ h1 span {
 
 .hero-note {
   align-self: end;
-  padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(248, 243, 234, 0.96));
+  padding: 0;
 }
 
 .profile-figure {
-  margin: 0 0 1.1rem;
+  margin: 0;
 }
 
 .profile-image {
