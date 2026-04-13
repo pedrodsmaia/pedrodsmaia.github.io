@@ -117,9 +117,7 @@ h3 {
   height: auto;
   object-fit: contain;
   border: 1px solid var(--line);
-  transform: rotate(90deg);
-  transform-origin: center;
-  margin: 5rem auto 3rem;
+  margin: 0 auto 0.8rem;
 }
 
 .section-kicker {
