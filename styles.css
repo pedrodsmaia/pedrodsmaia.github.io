@@ -108,10 +108,13 @@ h3 {
 
 .home-image {
   display: block;
-  width: 100%;
-  max-height: 42vh;
+  width: min(100%, 420px);
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 1px solid var(--line);
+  transform: rotate(90deg);
+  transform-origin: center;
+  margin: 5.5rem auto 4.5rem;
 }
 
 .section-kicker {
