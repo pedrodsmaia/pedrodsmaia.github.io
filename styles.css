@@ -99,11 +99,16 @@ h3 {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
   padding: 3.2rem 0 3rem;
 }
 
 .hero-copy {
   max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .home-image {
