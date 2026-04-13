@@ -67,7 +67,10 @@ a {
   text-decoration: none;
 }
 
-.site-name,
+.site-name {
+  font-family: "Manrope", sans-serif;
+}
+
 h1,
 h2,
 h3 {
