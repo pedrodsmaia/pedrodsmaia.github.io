@@ -164,7 +164,6 @@ h1 span {
   color: var(--accent);
 }
 
-.intro-card,
 .timeline-item {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -211,7 +210,6 @@ h1 span {
 
 .intro-card {
   padding: 1.75rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(248, 243, 234, 0.95));
 }
 
 .intro-card h2,
