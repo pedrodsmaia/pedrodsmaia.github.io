@@ -103,13 +103,13 @@ h3 {
 }
 
 .hero-copy {
-  max-width: 820px;
+  max-width: 640px;
 }
 
 .home-image {
   display: block;
   width: 100%;
-  max-height: 56vh;
+  max-height: 42vh;
   object-fit: cover;
   border: 1px solid var(--line);
 }
