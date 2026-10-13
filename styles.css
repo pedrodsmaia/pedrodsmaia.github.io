@@ -117,7 +117,27 @@ h3 {
   height: auto;
   object-fit: contain;
   border: 1px solid var(--line);
+  margin: 0 auto;
+}
+
+.home-figure {
+  width: min(100%, 600px);
   margin: 0 auto 1.8rem;
+}
+
+.home-figure .home-image {
+  width: 100%;
+}
+
+.image-credit {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.image-credit a {
+  color: inherit;
 }
 
 .section-kicker {
