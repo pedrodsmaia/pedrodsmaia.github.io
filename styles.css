@@ -105,7 +105,7 @@ h3 {
 }
 
 .hero-copy {
-  max-width: 720px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -121,12 +121,17 @@ h3 {
 }
 
 .home-figure {
-  width: min(100%, 600px);
+  width: 100%;
   margin: 0 auto 1.8rem;
 }
 
 .home-figure .home-image {
   width: 100%;
+}
+
+.home-intro {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .image-credit {
